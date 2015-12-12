@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Directive Composition Demo</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-app="docsTabsExample" >
+  <div id="tabs">
+  <my-tabs>
+  <my-pane title="Hello">
+    <h4>Hello</h4>
+    <p>Lorem ipsum dolor sit amet</p>
+  </my-pane>
+  <my-pane title="World">
+    <h4>World</h4>
+    <em>Mauris elementum elementum enim at suscipit.</em>
+    <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
+  </my-pane>
+  </div>
+</my-tabs>
+
+<div class='span12'></div>
+<p>Inner HTML of Angular App</p>
+<pre id="appText" class='prettyprint lang-html'></pre>
+</div>
+</body>
+</html>
